@@ -25,27 +25,27 @@ def page_accueil():
     """)
 
 
-# Afficher l'origine du chiffre d'affaires
+# afficher l'origine du chiffre d'affaires
 def sentiment_analysis(data):
     st.subheader("Nous avons classé les commentaires sous trois groupes : Positif, Négatif et Neutre à travers la méthode du sentiment analysis")
     st.image("C:/Users/SYLVAIN/Downloads/Data Olist/Images/sentiment_analysis.png")
 
 
-# Afficher les clients payant le plus de frais de livraison
+# afficher les clients payant le plus de frais de livraison
 def paiment_frais_livraison(data):
     st.subheader("Nous avons identifé les clients qui payent le plus de frais de livraison par rapport à la classification. Seul le client fidèle bénéficie des avantages de la livraison")
 
     st.image("C:/Users/SYLVAIN/Downloads/Data Olist/Images/plus_de_frais_de_livraison.png")
    
 
-# Afficher les clients payant le plus de frais de livraison
+# afficher les clients payant le plus de frais de livraison
 def produits_plus_vendus(data):
     st.subheader("Nous avons représenté les catégories des produits les plus vendus avec le chiffre d'affaire généré")
 
     st.image("C:/Users/SYLVAIN/Downloads/Data Olist/Images/CA.png")
 
 
-# Afficher les moyens de paiement utilisés par les clients
+# afficher les moyens de paiement utilisés par les clients
 def mode_paiement_plus_utilise(data):
     st.subheader("Nous avons représenté les catégories des produits les plus vendus avec le chiffre d'affaires (C.A) généré")
 
