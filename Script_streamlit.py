@@ -6,7 +6,7 @@ import plotly.express as px
 # charger les données depuis un fichier CSV
 @st.cache_data
 def load_data(file_path):
-    return pd.read_csv(file_path)
+    return pd.read_csv(file_path, sep=';')
 
 
 # afficher la segmentation des clients
@@ -27,7 +27,7 @@ def page_accueil():
 
 
 # afficher l'origine du chiffre d'affaires
-def sentiment_analysis(data):
+def sentiment_analysis():
     st.subheader("Nous avons regroupé les commentaires à travers le Sentiment Analysis, en comparaison avec le score")
     st.title("Sentiment Analysis")
     st.image("C:/Users/SYLVAIN/Documents/GitHub/Projet_OLIST_2024/Images/Score_comment.png")
@@ -36,21 +36,21 @@ def sentiment_analysis(data):
 
 
 # afficher les clients payant le plus de frais de livraison
-def paiment_frais_livraison(data):
+def paiment_frais_livraison():
     st.subheader("Nous avons identifé les clients qui payent le plus de frais de livraison par rapport à la classification. Seul le client fidèle bénéficie des avantages de la livraison")
     st.title('Categorie de client paynt plus de frais de livraison')
     st.image("C:/Users/SYLVAIN/Documents/GitHub/Projet_OLIST_2024/Images/pay_plus_frais_livra.png")
    
 
 # afficher les clients payant le plus de frais de livraison
-def produits_plus_vendus(data):
+def produits_plus_vendus():
     st.subheader("Nous avons représenté les catégories des produits les plus vendus avec le chiffre d'affaire généré")
     st.title("Catégorie de produit les plus vendus avec le chiffre d'affaire généré")
     st.image("C:/Users/SYLVAIN/Documents/GitHub/Projet_OLIST_2024/Images/__CA.png")
 
 
 # afficher les moyens de paiement utilisés par les clients
-def mode_paiement_plus_utilise(data):
+def mode_paiement_plus_utilise():
     st.subheader("Nous avons représenté les catégories des produits les plus vendus avec le chiffre d'affaires (C.A) généré")
     st.title("Les modes de payement")
     st.image("C:/Users/SYLVAIN/Documents/GitHub/Projet_OLIST_2024/Images/mode pay.png")
