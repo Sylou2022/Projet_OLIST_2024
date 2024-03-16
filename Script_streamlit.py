@@ -14,7 +14,7 @@ def segmentation_des_clients():
     st.subheader("Nous avons catégorisé les clients en plusieurs types, à travers du clustering")
     st.title('Segmentation des clients')
 
-    st.image("C:/Users/SYLVAIN/Downloads/Data Olist/Images/segment.png")
+    st.image("C:/Users/SYLVAIN/Documents/GitHub/Projet_OLIST_2024/Images/segment.png")
 
 
 # afficher la page d'accueil
@@ -30,30 +30,30 @@ def page_accueil():
 def sentiment_analysis(data):
     st.subheader("Nous avons regroupé les commentaires à travers le Sentiment Analysis, en comparaison avec le score")
     st.title("Sentiment Analysis")
-    st.image("C:/Users/SYLVAIN/Downloads/Data Olist/Images/Score_comment.png")
-    st.image("C:/Users/SYLVAIN/Downloads/Data Olist/Images/commntaire.png")
-    st.image("C:/Users/SYLVAIN/Downloads/Data Olist/Images/new_customer.png")
+    st.image("C:/Users/SYLVAIN/Documents/GitHub/Projet_OLIST_2024/Images/Score_comment.png")
+    st.image("C:/Users/SYLVAIN/Documents/GitHub/Projet_OLIST_2024/Images/commntaire.png")
+    st.image("C:/Users/SYLVAIN/Documents/GitHub/Projet_OLIST_2024/Images/new_customer.png")
 
 
 # afficher les clients payant le plus de frais de livraison
 def paiment_frais_livraison(data):
     st.subheader("Nous avons identifé les clients qui payent le plus de frais de livraison par rapport à la classification. Seul le client fidèle bénéficie des avantages de la livraison")
     st.title('Categorie de client paynt plus de frais de livraison')
-    st.image("C:/Users/SYLVAIN/Downloads/Data Olist/Images/pay_plus_frais_livra.png")
+    st.image("C:/Users/SYLVAIN/Documents/GitHub/Projet_OLIST_2024/Images/pay_plus_frais_livra.png")
    
 
 # afficher les clients payant le plus de frais de livraison
 def produits_plus_vendus(data):
     st.subheader("Nous avons représenté les catégories des produits les plus vendus avec le chiffre d'affaire généré")
     st.title("Catégorie de produit les plus vendus avec le chiffre d'affaire généré")
-    st.image("C:/Users/SYLVAIN/Downloads/Data Olist/Images/__CA.png")
+    st.image("C:/Users/SYLVAIN/Documents/GitHub/Projet_OLIST_2024/Images/__CA.png")
 
 
 # afficher les moyens de paiement utilisés par les clients
 def mode_paiement_plus_utilise(data):
     st.subheader("Nous avons représenté les catégories des produits les plus vendus avec le chiffre d'affaires (C.A) généré")
     st.title("Les modes de payement")
-    st.image("C:/Users/SYLVAIN/Downloads/Data Olist/Images/mode pay.png")
+    st.image("C:/Users/SYLVAIN/Documents/GitHub/Projet_OLIST_2024/Images/mode pay.png")
 
 
 # Charger les données
