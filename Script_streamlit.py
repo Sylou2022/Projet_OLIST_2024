@@ -78,5 +78,5 @@ selected_page = st.sidebar.radio("Sélectionnez une option", list(menu_options.k
 # Exécuter la fonction correspondante à l'option sélectionnée dans le menu
 if selected_page == "Accueil":
     menu_options[selected_page]()  # Pas besoin de passer de DataFrame en argument pour la page d'accueil
-else:
-    menu_options[selected_page]()  # Passer le DataFrame en argument pour les autres pages
+# else:
+#     menu_options[selected_page]()  # Passer le DataFrame en argument pour les autres pages
