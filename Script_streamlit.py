@@ -5,8 +5,8 @@ import plotly.express as px
 
 # charger les données depuis un fichier CSV
 @st.cache_data
-# def load_data(file_path):
-#     return pd.read_csv(file_path, sep=';')
+def load_data(file_path):
+    return pd.read_csv(file_path)
 
 
 # afficher la segmentation des clients
@@ -57,7 +57,7 @@ def mode_paiement_plus_utilise(data):
 
 
 # Charger les données
-# df = load_data('C:/Users/SYLVAIN/Downloads/Data Olist/Data/df_user.csv')
+df = load_data('C:/Users/SYLVAIN/Downloads/Data Olist/Data/df_user.csv')
 
 # Liste des options de graphiques
 menu_options = {
@@ -78,5 +78,5 @@ selected_page = st.sidebar.radio("Sélectionnez une option", list(menu_options.k
 # Exécuter la fonction correspondante à l'option sélectionnée dans le menu
 if selected_page == "Accueil":
     menu_options[selected_page]()  # Pas besoin de passer de DataFrame en argument pour la page d'accueil
-# else:
-#     menu_options[selected_page]()  # Passer le DataFrame en argument pour les autres pages
+else:
+    menu_options[selected_page](df)  # Passer le DataFrame en argument pour les autres pages
